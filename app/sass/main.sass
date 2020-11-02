@@ -1,0 +1,160 @@
+@import "vars"
+@import "mixin"
+@import "fonts"
+@import "libs"
+@import "animate.css"
+@import "owl.carousel.min.css"
+@import "../libs/site-block/_header.sass"
+*
+	font-family: Roboto, Montserrat
+.clr
+	clear: both
+
+.overlow-hidden
+	position: relative
+	overflow-x: hidden
+
+.container-fluid
+	padding: 0
+
+.container
+	max-width: 1400px
+
+.header
+	position: absolute
+	width: 100%
+	top: 30px
+	z-index: 3
+
+ul.menu
+	padding: 0
+	margin: 0
+	width: 100%
+	li
+		display: inline-flex
+		flex-grow: 1
+		list-style: none
+		a
+			color: #fff
+.main-h1
+	font-size: 50px
+	color: #fff
+	margin-top: 75px
+.top-agro
+	padding: 100px 100px
+	position: relative
+	background: url("../img/header-bg.jpg") no-repeat center
+	-webkit-background-size: cover
+	background-size: cover
+	p
+		padding-right: 30%
+		color: #fff
+		margin-top: 30px
+	a
+		height: 50px
+		padding: 0 50px
+		margin-top: 40px
+	&:before
+		content: ''
+		width: 100%
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+		background: rgba(255,221,85,.5)
+.logo
+	img
+		width: 100%
+
+.zayavka
+	background: url(../img/zav.jpg)
+	background-size: cover
+	padding-top: 35px
+	padding-bottom: 45px
+	h3
+		color: #fff
+		font-size: 25px
+		margin-top: 15px
+		margin-bottom: 30px
+	input
+		width: 80%
+		padding-left: 25px
+		border: none
+		height: 50px
+		border-radius: 50px
+	button
+		height: 50px
+		background: #383535
+		color: #ffffff
+		border: none
+		border-radius: 50px
+		width: 60%
+.company
+	padding-top: 35px
+	padding-bottom: 65px
+	h2
+		color: #333
+		//text-align: center
+		margin-top: 45px
+		margin-bottom: 30px
+		font-size: 30px
+	p
+		//text-align: center
+		color: #333
+		font-size: 18px
+		margin-bottom: 10px
+.aida
+	background: #383535
+	padding-top: 25px
+	padding-bottom: 45px
+	h2
+		margin-top: 35px
+		margin-bottom: 45px
+		text-align: center
+		color: #fff
+	img
+		display: block
+		margin: auto
+		width: 50px
+		margin-top: 30px
+	p
+		text-align: center
+		margin-top: 15px
+		color: #fff
+.slick-arrow
+	display: none!important
+.otzyvy
+	h3
+		font-size: 25px
+		margin-top: 40px
+		margin-bottom: 20px
+	position: relative
+	button
+		width: 30px
+		height: 30px
+		border: none
+		background: transparent
+		img
+			width: 100%
+	button.prev
+		margin-right: 15px
+		img
+			transform: rotateY(180deg)
+	.reviews
+		margin-top: 20px
+		margin-bottom: 25px
+		.rev
+			background: #383535
+			padding: 20px
+		h4
+			font-size: 18px
+			color: #ffdd55
+		p
+			font-size: 16px
+			color: #fff
+.galler
+	img
+		width: 350px
+		height: 150px
+
+@import "media"
